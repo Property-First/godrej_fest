@@ -106,7 +106,7 @@ $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 if (mail($to, $subject, $message, $headers)) {
 
     // Redirect back to website
-    header("Location: index.html?success=1");
+    header("Location: thank-you.html");
     exit;
 
 } else {
